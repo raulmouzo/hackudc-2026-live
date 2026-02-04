@@ -1,0 +1,663 @@
+{
+  "version": "2.6",
+  "children": [
+    {
+      "type": "frame",
+      "id": "bi8Au",
+      "x": 0,
+      "y": 0,
+      "name": "HackUDC 2026 Signage",
+      "clip": true,
+      "width": 1920,
+      "height": 1080,
+      "fill": [
+        "$bg-main",
+        {
+          "type": "image",
+          "opacity": 0.45,
+          "enabled": true,
+          "url": "./public/images/pattern.png",
+          "mode": "fill"
+        }
+      ],
+      "gap": "$spacing-xl",
+      "padding": 48,
+      "children": [
+        {
+          "type": "frame",
+          "id": "S0tkk",
+          "name": "Main Content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "fill": "#05060ACC",
+          "effect": {
+            "type": "background_blur",
+            "radius": 28
+          },
+          "layout": "vertical",
+          "gap": "$spacing-xl",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Ej3b5",
+              "name": "Header",
+              "width": "fill_container",
+              "fill": "#060913E6",
+              "cornerRadius": 20,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#000000A0",
+                "blur": 30
+              },
+              "gap": 24,
+              "padding": [
+                16,
+                24
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "MpVXG",
+                  "name": "HackUDC Logo",
+                  "clip": true,
+                  "width": 360,
+                  "height": 64,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./public/images/logo.png",
+                    "mode": "fit"
+                  },
+                  "cornerRadius": 16,
+                  "layout": "none"
+                },
+                {
+                  "type": "frame",
+                  "id": "cWAYR",
+                  "name": "Clock",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "alignItems": "end",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ZsliA",
+                      "name": "Clock Time",
+                      "fill": "$text-primary",
+                      "content": "14:32:18",
+                      "fontFamily": "Space Mono",
+                      "fontSize": 32,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "JhmLX",
+                      "name": "Clock Label",
+                      "fill": "$text-muted",
+                      "content": "CURRENT TIME",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "600",
+                      "letterSpacing": 3
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qwAMo",
+              "name": "Countdown Card",
+              "width": "fill_container",
+              "height": "fill_container",
+              "fill": "#050914F0",
+              "cornerRadius": 32,
+              "effect": [
+                {
+                  "type": "background_blur",
+                  "radius": 40
+                },
+                {
+                  "type": "shadow",
+                  "shadowType": "outer",
+                  "color": "#F3C74366",
+                  "blur": 45
+                }
+              ],
+              "layout": "vertical",
+              "gap": 16,
+              "padding": [
+                32,
+                40
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "G5YWR",
+                  "name": "Countdown Label",
+                  "fill": "$text-muted",
+                  "content": "TIME UNTIL SUBMISSION",
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "letterSpacing": 4
+                },
+                {
+                  "type": "text",
+                  "id": "A7nIO",
+                  "name": "Countdown Value",
+                  "fill": "$brand-primary",
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#F3C743AA",
+                    "blur": 36
+                  },
+                  "content": "12:34:56",
+                  "textAlign": "center",
+                  "fontFamily": "Space Mono",
+                  "fontSize": 96,
+                  "fontWeight": "700",
+                  "letterSpacing": 6
+                },
+                {
+                  "type": "text",
+                  "id": "CCCyb",
+                  "name": "Countdown Hint",
+                  "fill": "$text-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Submit on Devpost before the clock hits 00:00:00",
+                  "lineHeight": 1.4,
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 14
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "MlI6D",
+              "name": "Now & Next",
+              "width": "fill_container",
+              "fill": "#050914E6",
+              "cornerRadius": 24,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#000000B0",
+                "blur": 32
+              },
+              "layout": "vertical",
+              "gap": 16,
+              "padding": [
+                24,
+                28
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "9K805",
+                  "name": "Schedule Title",
+                  "fill": "$text-muted",
+                  "content": "NOW & NEXT",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600",
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "frame",
+                  "id": "WiNfh",
+                  "name": "Now Item",
+                  "width": "fill_container",
+                  "fill": "#070D1CE6",
+                  "cornerRadius": 18,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 2,
+                    "fill": "$brand-primary"
+                  },
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#F3C74380",
+                    "blur": 24
+                  },
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": [
+                    16,
+                    18
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "m1v2t",
+                      "name": "Now Label",
+                      "fill": "$brand-primary",
+                      "content": "NOW",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "IR0YQ",
+                      "name": "Now Title",
+                      "fill": "$text-primary",
+                      "content": "Team Formation & Hacking Begins",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "pfPg6",
+                      "name": "Now Time",
+                      "fill": "$text-muted",
+                      "content": "09:30 – 11:00",
+                      "fontFamily": "Space Mono",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "U77DM",
+                  "name": "Next Item 1",
+                  "width": "fill_container",
+                  "fill": "#070D1CBA",
+                  "cornerRadius": 14,
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": [
+                    12,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "W3nLb",
+                      "name": "Next 1 Title",
+                      "fill": "$text-primary",
+                      "content": "Workshop: Shipping a Winning Demo",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "PlTAh",
+                      "name": "Next 1 Time",
+                      "fill": "$text-muted",
+                      "content": "11:15 – 12:00",
+                      "fontFamily": "Space Mono",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "EWPBS",
+                  "name": "Next Item 2",
+                  "width": "fill_container",
+                  "fill": "#070D1CBA",
+                  "cornerRadius": 14,
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": [
+                    12,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "69e6D",
+                      "name": "Next 2 Title",
+                      "fill": "$text-primary",
+                      "content": "Mentor Rounds & Check‑ins",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "LOJm2",
+                      "name": "Next 2 Time",
+                      "fill": "$text-muted",
+                      "content": "12:15 – 13:00",
+                      "fontFamily": "Space Mono",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "imOqv",
+          "name": "Sidebar",
+          "width": 520,
+          "height": "fill_container",
+          "fill": "#05060ACC",
+          "effect": {
+            "type": "background_blur",
+            "radius": 24
+          },
+          "layout": "vertical",
+          "gap": "$spacing-lg",
+          "children": [
+            {
+              "type": "frame",
+              "id": "ENqxY",
+              "name": "Sponsor Gallery",
+              "width": "fill_container",
+              "height": "fill_container",
+              "fill": "#050914E6",
+              "cornerRadius": 24,
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "nNiaS",
+                  "name": "Platinum Tier",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "8a1pV",
+                      "name": "Platinum Label",
+                      "fill": "$brand-primary",
+                      "content": "PLATINUM",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Gvcrc",
+                      "name": "Platinum Sponsor 1",
+                      "width": "fill_container",
+                      "height": 72,
+                      "fill": "#101728",
+                      "cornerRadius": 18,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$chip-border"
+                      },
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#00000080",
+                        "blur": 20
+                      },
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "3rdPv",
+                          "name": "Plat 1 Name",
+                          "fill": "$text-primary",
+                          "content": "ACME CLOUD",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "600",
+                          "letterSpacing": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "T4gE7",
+                      "name": "Platinum Sponsor 2",
+                      "width": "fill_container",
+                      "height": 72,
+                      "fill": "#101728",
+                      "cornerRadius": 18,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$chip-border"
+                      },
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "WzJrc",
+                          "name": "Plat 2 Name",
+                          "fill": "$text-primary",
+                          "content": "QUANTUM SYSTEMS",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "600",
+                          "letterSpacing": 1
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "QLry3",
+                  "name": "Gold Tier",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "sHEcR",
+                      "name": "Gold Label",
+                      "fill": "$text-muted",
+                      "content": "GOLD",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "frame",
+                      "id": "PH5Z6",
+                      "name": "Gold Sponsor 1",
+                      "width": "fill_container",
+                      "height": 60,
+                      "fill": "#0C1324",
+                      "cornerRadius": 14,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$chip-border"
+                      },
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "s1iPw",
+                          "name": "Gold 1 Name",
+                          "fill": "$text-primary",
+                          "content": "NEURALWARE",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "RVvAB",
+                      "name": "Gold Sponsor 2",
+                      "width": "fill_container",
+                      "height": 60,
+                      "fill": "#0C1324",
+                      "cornerRadius": 14,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$chip-border"
+                      },
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "BKP2a",
+                          "name": "Gold 2 Name",
+                          "fill": "$text-primary",
+                          "content": "BYTEBREW",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "GNhMD",
+                  "name": "Sponsors Title",
+                  "fill": "$text-muted",
+                  "content": "SPONSOR GALLERY",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600",
+                  "letterSpacing": 3
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "JIl3M",
+              "name": "Bottom Ticker",
+              "width": "fill_container",
+              "height": 80,
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 135,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#F3C743",
+                    "position": 0
+                  },
+                  {
+                    "color": "#F7D161",
+                    "position": 0.5
+                  },
+                  {
+                    "color": "#FFE38A",
+                    "position": 1
+                  }
+                ]
+              },
+              "cornerRadius": 999,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#F3C74380",
+                "blur": 40
+              },
+              "gap": 32,
+              "padding": [
+                12,
+                24
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "fR65J",
+                  "name": "Ticker WiFi",
+                  "fill": "#2A1B00",
+                  "content": "Wi‑Fi: HackUDC  •  Password: hackthefuture",
+                  "fontFamily": "Space Mono",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "dFpUm",
+                  "name": "Ticker Social",
+                  "fill": "#2A1B00",
+                  "content": "Share your build →  #HackUDC",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "accent-neon": {
+      "type": "color",
+      "value": "#FFE38A"
+    },
+    "bg-glass": {
+      "type": "color",
+      "value": "#0B0F17E6"
+    },
+    "bg-main": {
+      "type": "color",
+      "value": "#05060A"
+    },
+    "brand-primary": {
+      "type": "color",
+      "value": "#F3C743"
+    },
+    "brand-primary-soft": {
+      "type": "color",
+      "value": "#F7D161"
+    },
+    "chip-border": {
+      "type": "color",
+      "value": "#2A3144"
+    },
+    "spacing-lg": {
+      "type": "number",
+      "value": 24
+    },
+    "spacing-xl": {
+      "type": "number",
+      "value": 32
+    },
+    "text-muted": {
+      "type": "color",
+      "value": "#8F96B2"
+    },
+    "text-primary": {
+      "type": "color",
+      "value": "#F5F7FF"
+    }
+  }
+}
