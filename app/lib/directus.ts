@@ -36,9 +36,20 @@ interface Announcement {
   visible: boolean
 }
 
+interface Challenge {
+  id: number
+  title: string
+  description: string
+  criteria: string
+  sponsor: Sponsor
+  prize: string
+  prize_url: string
+}
+
 interface Schema {
   sponsors: Sponsor[]
   schedule: Schedule[]
+  challenges: Challenge[]
   wifi: Wifi
   hackingtime: Hackingtime
   announcement: Announcement

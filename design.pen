@@ -23,6 +23,7 @@
           "type": "frame",
           "id": "82jB2",
           "name": "Left Section",
+          "rotation": 0.03423277233902493,
           "width": 1280,
           "height": "fill_container",
           "layout": "vertical",
@@ -58,7 +59,8 @@
                   "fill": "#a3a3a3",
                   "content": "14:32",
                   "fontFamily": "Inter",
-                  "fontSize": 32
+                  "fontSize": 32,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -90,7 +92,8 @@
                   "fill": "#fafafa",
                   "content": "23:45:12",
                   "fontFamily": "JetBrains Mono",
-                  "fontSize": 90
+                  "fontSize": 90,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -161,7 +164,8 @@
                       "fill": "#404040",
                       "content": "Learn how to build headless backends for your hackathon projects.",
                       "fontFamily": "Inter",
-                      "fontSize": 18
+                      "fontSize": 18,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "text",
@@ -228,7 +232,8 @@
                       "fill": "#404040",
                       "content": "Official start of HackUDC 2026.",
                       "fontFamily": "Inter",
-                      "fontSize": 18
+                      "fontSize": 18,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -285,7 +290,8 @@
                       "fill": "#a3a3a3",
                       "content": "Integrate AI into your hackathon projects.",
                       "fontFamily": "Inter",
-                      "fontSize": 18
+                      "fontSize": 18,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "text",
@@ -352,7 +358,8 @@
                       "fill": "#a3a3a3",
                       "content": "Present your projects and win prizes.",
                       "fontFamily": "Inter",
-                      "fontSize": 18
+                      "fontSize": 18,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "text",
@@ -646,7 +653,8 @@
                       "fill": "#737373",
                       "content": "Password: hackudc2026",
                       "fontFamily": "Inter",
-                      "fontSize": 12
+                      "fontSize": 12,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -680,6 +688,2393 @@
                         "url": "./public/images/gpul.png",
                         "mode": "fit"
                       }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "nTvke",
+      "x": 2000,
+      "y": 0,
+      "name": "Index Page - Desktop",
+      "context": "Index page for desktop. WiFi, Discord, Social + nav to Schedule, Map, Challenges.",
+      "clip": true,
+      "width": 1200,
+      "height": 900,
+      "fill": {
+        "type": "image",
+        "opacity": 0.2,
+        "enabled": true,
+        "url": "./build/client/images/pattern.png",
+        "mode": "fill"
+      },
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "IcaiQ",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 56,
+          "padding": [
+            24,
+            32
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "lPF9S",
+              "name": "Logo",
+              "width": 180,
+              "height": 32,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./build/client/images/logo.png",
+                "mode": "fit"
+              }
+            },
+            {
+              "type": "text",
+              "id": "eM3cB",
+              "name": "Current Time",
+              "fill": "#94a3b8",
+              "content": "14:32",
+              "fontFamily": "Inter",
+              "fontSize": 24,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "NugIT",
+          "name": "Countdown",
+          "width": "fill_container",
+          "height": 72,
+          "layout": "vertical",
+          "gap": 4,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "DjkcA",
+              "name": "Countdown Label",
+              "fill": "#64748b",
+              "content": "HACKING ENDS IN",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "Ll8FY",
+              "name": "Countdown Value",
+              "fill": "#e5e5e5",
+              "content": "23:45:12",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 32,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "O9b1J",
+          "name": "Main Content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            32,
+            48,
+            48,
+            48
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "CZDOb",
+              "name": "WiFi Discord Social Card",
+              "width": "fill_container",
+              "fill": "#1a1a1a",
+              "cornerRadius": 12,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#333333"
+              },
+              "layout": "vertical",
+              "gap": 24,
+              "padding": 32,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "qwCIn",
+                  "name": "Stay connected",
+                  "fill": "#94a3b8",
+                  "content": "Stay connected",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "fwQEg",
+                  "name": "Info Row",
+                  "width": "fill_container",
+                  "gap": 48,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "l9rVe",
+                      "name": "WiFi Block",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "QSxQA",
+                          "name": "WiFi Label",
+                          "fill": "#94a3b8",
+                          "content": "Wi-Fi",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "P8XLF",
+                          "name": "SSID",
+                          "fill": "#f1f5f9",
+                          "content": "HackUDC-2026",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "hOMsh",
+                          "name": "Password",
+                          "fill": "#94a3b8",
+                          "content": "Password: hackudc2026",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "iTn5N",
+                      "name": "Discord Block",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "j8nH2",
+                          "name": "Discord Label",
+                          "fill": "#94a3b8",
+                          "content": "Discord",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "3otqK",
+                          "name": "Discord Link",
+                          "fill": "#818cf8",
+                          "content": "discord.gg/hackudc",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "iwq5X",
+                      "name": "Social Block",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "4ooCd",
+                          "name": "Social Label",
+                          "fill": "#94a3b8",
+                          "content": "Social",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "emgtD",
+                          "name": "Social Icons and Hashtag",
+                          "gap": 12,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "NwFHo",
+                              "name": "iconTw",
+                              "width": 22,
+                              "height": 22,
+                              "iconFontName": "twitter",
+                              "iconFontFamily": "lucide",
+                              "fill": "#94a3b8"
+                            },
+                            {
+                              "type": "icon_font",
+                              "id": "VGFDO",
+                              "name": "iconIg",
+                              "width": 22,
+                              "height": 22,
+                              "iconFontName": "instagram",
+                              "iconFontFamily": "lucide",
+                              "fill": "#94a3b8"
+                            },
+                            {
+                              "type": "icon_font",
+                              "id": "azCQ1",
+                              "name": "iconLk",
+                              "width": 22,
+                              "height": 22,
+                              "iconFontName": "linkedin",
+                              "iconFontFamily": "lucide",
+                              "fill": "#94a3b8"
+                            },
+                            {
+                              "type": "text",
+                              "id": "od7tN",
+                              "name": "Hashtag",
+                              "fill": "#e5e5e5",
+                              "content": "#HackUDC2026",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "qRXzK",
+                      "name": "Venue Map Block",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "gWts0",
+                          "name": "Venue Label",
+                          "fill": "#94a3b8",
+                          "content": "Venue",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "RJbd5",
+                          "name": "View venue map",
+                          "fill": "#818cf8",
+                          "content": "View venue map",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "YmSB2",
+              "name": "Announcement",
+              "width": "fill_container",
+              "fill": "#422c0a",
+              "cornerRadius": 12,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#f59e0b"
+              },
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "WtiMq",
+                  "name": "Announcement Header",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "GKPFS",
+                      "name": "Dot",
+                      "fill": "#fbbf24",
+                      "width": 8,
+                      "height": 8
+                    },
+                    {
+                      "type": "text",
+                      "id": "51pg5",
+                      "name": "Announcement Label",
+                      "fill": "#fcd34d",
+                      "content": "ANNOUNCEMENT",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "jyl5t",
+                  "name": "Announcement body",
+                  "fill": "#fffbeb",
+                  "content": "Announcement content appears here…",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "JxSol",
+              "name": "Quick links",
+              "fill": "#94a3b8",
+              "content": "Quick links",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "3Fb7U",
+              "name": "Nav Buttons",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "l2chA",
+                  "name": "Schedule Button",
+                  "width": "fill_container",
+                  "height": 160,
+                  "fill": "#141414",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#333333"
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "zZ6VN",
+                      "name": "iconS",
+                      "width": 28,
+                      "height": 28,
+                      "iconFontName": "calendar",
+                      "iconFontFamily": "lucide",
+                      "fill": "#e5e5e5"
+                    },
+                    {
+                      "type": "text",
+                      "id": "DT62C",
+                      "name": "Schedule Label",
+                      "fill": "#f1f5f9",
+                      "content": "Schedule",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "K4NVj",
+                      "name": "Schedule Desc",
+                      "fill": "#94a3b8",
+                      "content": "See the full agenda",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "P0NAA",
+                  "name": "Challenges Button",
+                  "width": "fill_container",
+                  "height": 160,
+                  "fill": "#141414",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#333333"
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "RdqBT",
+                      "name": "iconC",
+                      "width": 28,
+                      "height": 28,
+                      "iconFontName": "trophy",
+                      "iconFontFamily": "lucide",
+                      "fill": "#facc15"
+                    },
+                    {
+                      "type": "text",
+                      "id": "DIchH",
+                      "name": "Challenges Label",
+                      "fill": "#facc15",
+                      "content": "Challenges and Prizes",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "CCmOa",
+                      "name": "Challenges Desc",
+                      "fill": "#94a3b8",
+                      "content": "Tracks and awards",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "lcMlO",
+      "x": 3220,
+      "y": 0,
+      "name": "Index Page - Mobile",
+      "context": "Index page for mobile. Same content, stacked layout.",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": {
+        "type": "image",
+        "opacity": 0.2,
+        "enabled": true,
+        "url": "./build/client/images/pattern.png",
+        "mode": "fill"
+      },
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "IgAlM",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 52,
+          "padding": [
+            16,
+            20
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "ySgQJ",
+              "name": "Logo",
+              "width": 140,
+              "height": 28,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./build/client/images/logo.png",
+                "mode": "fit"
+              }
+            },
+            {
+              "type": "text",
+              "id": "MFSFz",
+              "name": "Current Time",
+              "fill": "#94a3b8",
+              "content": "14:32",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "hQ33H",
+          "name": "Countdown",
+          "width": "fill_container",
+          "height": 56,
+          "layout": "vertical",
+          "gap": 2,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "lXIHA",
+              "name": "Countdown Label",
+              "fill": "#64748b",
+              "content": "HACKING ENDS IN",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "sayzM",
+              "name": "Countdown Value",
+              "fill": "#e5e5e5",
+              "content": "23:45:12",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 24,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "0KoGD",
+          "name": "Scroll Content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            20,
+            20,
+            24,
+            20
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "gikDW",
+              "name": "WiFi Discord Social Card",
+              "width": "fill_container",
+              "fill": "#1a1a1a",
+              "cornerRadius": 12,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#333333"
+              },
+              "layout": "vertical",
+              "gap": 20,
+              "padding": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Ljiyb",
+                  "name": "Stay connected",
+                  "fill": "#94a3b8",
+                  "content": "Stay connected",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "zUXLw",
+                  "name": "WiFi Row",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "rm0Ef",
+                      "name": "WiFi Label",
+                      "fill": "#94a3b8",
+                      "content": "Wi-Fi",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "t6J58",
+                      "name": "SSID",
+                      "fill": "#f1f5f9",
+                      "content": "HackUDC-2026",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "07Gch",
+                      "name": "Password",
+                      "fill": "#94a3b8",
+                      "content": "Password: hackudc2026",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "5mjaR",
+                  "name": "Discord Row",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "aUcGH",
+                      "name": "Discord Label",
+                      "fill": "#94a3b8",
+                      "content": "Discord",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fGtoW",
+                      "name": "Discord Link",
+                      "fill": "#818cf8",
+                      "content": "discord.gg/hackudc",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "vGVoc",
+                  "name": "Social Row",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "0dLxB",
+                      "name": "Social Label",
+                      "fill": "#94a3b8",
+                      "content": "Social",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "aY5Lh",
+                      "name": "Social Icons and Hashtag",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "WwWSn",
+                          "name": "iconTwM",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "twitter",
+                          "iconFontFamily": "lucide",
+                          "fill": "#94a3b8"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "zRtNi",
+                          "name": "iconIgM",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "instagram",
+                          "iconFontFamily": "lucide",
+                          "fill": "#94a3b8"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "f7VRB",
+                          "name": "iconLkM",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "linkedin",
+                          "iconFontFamily": "lucide",
+                          "fill": "#94a3b8"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pBZ5W",
+                          "name": "Hashtag",
+                          "fill": "#e5e5e5",
+                          "content": "#HackUDC2026",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "7k67L",
+                  "name": "Venue Map Row",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "uzSju",
+                      "name": "Venue Label",
+                      "fill": "#94a3b8",
+                      "content": "Venue",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "UaHOy",
+                      "name": "View venue map",
+                      "fill": "#818cf8",
+                      "content": "View venue map",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "z1Uvo",
+              "name": "Announcement",
+              "width": "fill_container",
+              "fill": "#422c0a",
+              "cornerRadius": 12,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#f59e0b"
+              },
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "SrP94",
+                  "name": "Announcement Header",
+                  "gap": 10,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "IgNZO",
+                      "name": "Dot",
+                      "fill": "#fbbf24",
+                      "width": 6,
+                      "height": 6
+                    },
+                    {
+                      "type": "text",
+                      "id": "pxPqS",
+                      "name": "Announcement Label",
+                      "fill": "#fcd34d",
+                      "content": "ANNOUNCEMENT",
+                      "fontFamily": "Inter",
+                      "fontSize": 10,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "gv68p",
+                  "name": "Announcement body",
+                  "fill": "#fffbeb",
+                  "content": "Announcement content appears here…",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "SrQPn",
+              "name": "Quick links",
+              "fill": "#94a3b8",
+              "content": "Quick links",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "EbLyN",
+              "name": "Schedule Button",
+              "width": "fill_container",
+              "height": 96,
+              "fill": "#141414",
+              "cornerRadius": 12,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#333333"
+              },
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 20,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "hRYxc",
+                  "name": "iconSm",
+                  "width": 24,
+                  "height": 24,
+                  "iconFontName": "calendar",
+                  "iconFontFamily": "lucide",
+                  "fill": "#e5e5e5"
+                },
+                {
+                  "type": "text",
+                  "id": "YrUjb",
+                  "name": "Schedule",
+                  "fill": "#f1f5f9",
+                  "content": "Schedule",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "0IQJL",
+                  "name": "See agenda",
+                  "fill": "#94a3b8",
+                  "content": "See the full agenda",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "GX7XM",
+              "name": "Challenges Button",
+              "width": "fill_container",
+              "height": 96,
+              "fill": "#141414",
+              "cornerRadius": 12,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#333333"
+              },
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 20,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "4cumA",
+                  "name": "iconCm",
+                  "width": 24,
+                  "height": 24,
+                  "iconFontName": "trophy",
+                  "iconFontFamily": "lucide",
+                  "fill": "#facc15"
+                },
+                {
+                  "type": "text",
+                  "id": "z3QWJ",
+                  "name": "Challenges",
+                  "fill": "#facc15",
+                  "content": "Challenges and Prizes",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "lAPsR",
+                  "name": "Challenges desc",
+                  "fill": "#94a3b8",
+                  "content": "Tracks and awards",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "3wgVd",
+      "x": 3670,
+      "y": 0,
+      "name": "Schedule Page - Desktop",
+      "context": "Schedule page desktop. Blocks with start, duration, end, location. Live = yellow border + LIVE NOW.",
+      "clip": true,
+      "width": 1200,
+      "height": 900,
+      "fill": {
+        "type": "image",
+        "opacity": 0.2,
+        "enabled": true,
+        "url": "./build/client/images/pattern.png",
+        "mode": "fill"
+      },
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "sPxRf",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 56,
+          "padding": [
+            24,
+            32
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "281LP",
+              "name": "Logo",
+              "width": 180,
+              "height": 32,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./build/client/images/logo.png",
+                "mode": "fit"
+              }
+            },
+            {
+              "type": "text",
+              "id": "MFVh3",
+              "name": "Current Time",
+              "fill": "#94a3b8",
+              "content": "14:32",
+              "fontFamily": "Inter",
+              "fontSize": 24,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "AuLpB",
+          "name": "Main",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            24,
+            48,
+            48,
+            48
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "pELcs",
+              "name": "Schedule",
+              "fill": "#94a3b8",
+              "content": "Schedule",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "Jw5Qa",
+              "name": "Schedule List",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ExkqX",
+                  "name": "Schedule Card Live",
+                  "width": "fill_container",
+                  "fill": "#000000",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 2,
+                    "fill": "#f59e0b"
+                  },
+                  "gap": 24,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "cTkI2",
+                      "name": "Time Block",
+                      "width": 160,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ZGHpK",
+                          "name": "Start and duration",
+                          "fill": "#fcd34d",
+                          "content": "14:00  2h 30m",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ZqDdo",
+                          "name": "End",
+                          "fill": "#94a3b8",
+                          "content": "→ 16:30",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "HSlAv",
+                          "name": "Location",
+                          "fill": "#94a3b8",
+                          "content": "Main Hall",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "NQLTF",
+                      "name": "Details",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ePe0H",
+                          "name": "Title",
+                          "fill": "#f1f5f9",
+                          "content": "Building APIs with Directus",
+                          "fontFamily": "Inter",
+                          "fontSize": 22,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "wdcR5",
+                          "name": "Tags",
+                          "fill": "#94a3b8",
+                          "content": "WORKSHOP",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "mvYl0",
+                          "name": "Description",
+                          "fill": "#94a3b8",
+                          "content": "Learn how to build headless backends.",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Aua6W",
+                          "name": "LIVE NOW",
+                          "gap": 8,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "ellipse",
+                              "id": "riB8Z",
+                              "name": "Dot",
+                              "fill": "#fbbf24",
+                              "width": 6,
+                              "height": 6
+                            },
+                            {
+                              "type": "text",
+                              "id": "V43rN",
+                              "name": "LIVE NOW",
+                              "fill": "#fcd34d",
+                              "content": "LIVE NOW",
+                              "fontFamily": "Inter",
+                              "fontSize": 11,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "QlwF1",
+                  "name": "Schedule Card Past",
+                  "width": "fill_container",
+                  "fill": "#0a0a0a",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#333333"
+                  },
+                  "gap": 24,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "7bMDQ",
+                      "name": "Time Block",
+                      "width": 160,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "23rCt",
+                          "name": "Time",
+                          "fill": "#64748b",
+                          "content": "09:00  30m",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "C87Fz",
+                          "name": "End",
+                          "fill": "#64748b",
+                          "content": "09:30",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "f8Q7F",
+                          "name": "Location",
+                          "fill": "#64748b",
+                          "content": "Main Theatre",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "nTdrr",
+                      "name": "Details",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "c0IQc",
+                          "name": "Title",
+                          "fill": "#64748b",
+                          "content": "Welcome and Kickoff",
+                          "fontFamily": "Inter",
+                          "fontSize": 20,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "MgE8z",
+                          "name": "Tags",
+                          "fill": "#64748b",
+                          "content": "OPENING",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Zpgep",
+                  "name": "Schedule Card Upcoming",
+                  "width": "fill_container",
+                  "fill": "#0a0a0a",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#333333"
+                  },
+                  "gap": 24,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "2vVdC",
+                      "name": "Time Block",
+                      "width": 160,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "iyZqa",
+                          "name": "Time",
+                          "fill": "#94a3b8",
+                          "content": "18:00  2h",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "VtYnK",
+                          "name": "End",
+                          "fill": "#94a3b8",
+                          "content": "20:00",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "V0HmF",
+                          "name": "Location",
+                          "fill": "#94a3b8",
+                          "content": "Main Hall",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "185Rz",
+                          "name": "Starts in",
+                          "fill": "#64748b",
+                          "content": "Starts in 3h 28m",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "7L7nU",
+                      "name": "Details",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "pbbiW",
+                          "name": "Title",
+                          "fill": "#f1f5f9",
+                          "content": "Demo and Awards",
+                          "fontFamily": "Inter",
+                          "fontSize": 20,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "YWhPc",
+                          "name": "Tags",
+                          "fill": "#94a3b8",
+                          "content": "CLOSING",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "zgUUC",
+      "x": 4910,
+      "y": 0,
+      "name": "Schedule Page - Mobile",
+      "context": "Schedule page mobile. Same content, stacked cards.",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": {
+        "type": "image",
+        "opacity": 0.2,
+        "enabled": true,
+        "url": "./build/client/images/pattern.png",
+        "mode": "fill"
+      },
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "2gT9f",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 52,
+          "padding": [
+            16,
+            20
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "wI8Ea",
+              "name": "Logo",
+              "width": 140,
+              "height": 28,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./build/client/images/logo.png",
+                "mode": "fit"
+              }
+            },
+            {
+              "type": "text",
+              "id": "OY0p7",
+              "name": "Time",
+              "fill": "#94a3b8",
+              "content": "14:32",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "k5Lvf",
+          "name": "Main",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            20,
+            20,
+            24,
+            20
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "0kclI",
+              "name": "Schedule",
+              "fill": "#94a3b8",
+              "content": "Schedule",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "Odhp1",
+              "name": "List",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "FXR5w",
+                  "name": "Card Live",
+                  "width": "fill_container",
+                  "fill": "#000000",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 2,
+                    "fill": "#f59e0b"
+                  },
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "pOvhx",
+                      "name": "Time Row",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "jt6cA",
+                          "name": "Time",
+                          "fill": "#fcd34d",
+                          "content": "14:00 – 16:30",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "VCctW",
+                      "name": "Title",
+                      "fill": "#f1f5f9",
+                      "content": "Building APIs with Directus",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ks8Ko",
+                      "name": "Meta",
+                      "fill": "#94a3b8",
+                      "content": "14:00 – 16:30 · Main Hall",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Cjbt2",
+                      "name": "LIVE NOW",
+                      "gap": 6,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "Lc7rK",
+                          "name": "Dot",
+                          "fill": "#fbbf24",
+                          "width": 5,
+                          "height": 5
+                        },
+                        {
+                          "type": "text",
+                          "id": "90N1L",
+                          "name": "LIVE NOW",
+                          "fill": "#fcd34d",
+                          "content": "LIVE NOW",
+                          "fontFamily": "Inter",
+                          "fontSize": 10,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ILbu1",
+                  "name": "Card Past",
+                  "width": "fill_container",
+                  "fill": "#0a0a0a",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#333333"
+                  },
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "MEyXz",
+                      "name": "Title",
+                      "fill": "#64748b",
+                      "content": "Welcome and Kickoff",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "tZw6H",
+                      "name": "Meta",
+                      "fill": "#64748b",
+                      "content": "09:00 – 09:30 · Main Theatre",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "eQltK",
+                  "name": "Card Upcoming",
+                  "width": "fill_container",
+                  "fill": "#0a0a0a",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#333333"
+                  },
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Tw4UW",
+                      "name": "Title",
+                      "fill": "#f1f5f9",
+                      "content": "Demo and Awards",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "plDqx",
+                      "name": "Meta",
+                      "fill": "#94a3b8",
+                      "content": "18:00 – 20:00 · Main Hall · Starts in 3h",
+                      "fontFamily": "Inter",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "5axb5",
+      "x": 5340,
+      "y": 0,
+      "name": "Challenges Page - Desktop",
+      "context": "Challenges: title, sponsor (logo), description (markdown), criteria (markdown), prize, prize_url.",
+      "clip": true,
+      "width": 1200,
+      "height": 900,
+      "fill": {
+        "type": "image",
+        "opacity": 0.2,
+        "enabled": true,
+        "url": "./build/client/images/pattern.png",
+        "mode": "fill"
+      },
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "Wl9eW",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 56,
+          "padding": [
+            24,
+            32
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "5vMwP",
+              "name": "Logo",
+              "width": 180,
+              "height": 32,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./build/client/images/logo.png",
+                "mode": "fit"
+              }
+            },
+            {
+              "type": "text",
+              "id": "1CHA6",
+              "name": "Time",
+              "fill": "#94a3b8",
+              "content": "14:32",
+              "fontFamily": "Inter",
+              "fontSize": 24,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "9CdSX",
+          "name": "Main",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            24,
+            48,
+            48,
+            48
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "FZjLY",
+              "name": "Title",
+              "fill": "#94a3b8",
+              "content": "Challenges and Prizes",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "7mRIa",
+              "name": "Challenges List",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "QOcVo",
+                  "name": "Challenge Card",
+                  "width": "fill_container",
+                  "fill": "#1a1a1a",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#333333"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 28,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ihld6",
+                      "name": "Card Header",
+                      "gap": 20,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "KtfWY",
+                          "name": "Company Logo",
+                          "width": 72,
+                          "height": 72,
+                          "fill": "#262626",
+                          "cornerRadius": 8
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Sqw2i",
+                          "name": "Title Wrap",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Nuy4Q",
+                              "name": "Challenge Title",
+                              "fill": "#f1f5f9",
+                              "content": "Best Use of Directus",
+                              "fontFamily": "Inter",
+                              "fontSize": 22,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "ECvO0",
+                              "name": "Company",
+                              "fill": "#94a3b8",
+                              "content": "Directus",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "UV5b6",
+                      "name": "Description",
+                      "fill": "#e5e5e5",
+                      "content": "Build something amazing using Directus as your headless CMS or backend. Show us your best integration, custom extension, or creative use of the platform.",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "827eK",
+                      "name": "Criteria",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "XQzdp",
+                          "name": "Criteria Label",
+                          "fill": "#94a3b8",
+                          "content": "Criteria",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pwGnf",
+                          "name": "Criteria body",
+                          "fill": "#e5e5e5",
+                          "content": "Judging criteria and rules (markdown, links embedded).",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "q5qtg",
+                      "name": "Prize",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "z5QbA",
+                          "name": "Prize Label",
+                          "fill": "#94a3b8",
+                          "content": "Prize",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "zEvhZ",
+                          "name": "Prize Value",
+                          "fill": "#facc15",
+                          "content": "€500 + Swag",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "AB3b8",
+                          "name": "Prize URL",
+                          "fill": "#818cf8",
+                          "content": "Details",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "7nLj6",
+                  "name": "Challenge Card 2",
+                  "width": "fill_container",
+                  "fill": "#1a1a1a",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#333333"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 28,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "waR1H",
+                      "name": "Card Header",
+                      "gap": 20,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "pL9yk",
+                          "name": "Company Logo",
+                          "width": 72,
+                          "height": 72,
+                          "fill": "#262626",
+                          "cornerRadius": 8
+                        },
+                        {
+                          "type": "frame",
+                          "id": "JOoO2",
+                          "name": "Title Wrap",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Tf2yC",
+                              "name": "Challenge Title",
+                              "fill": "#f1f5f9",
+                              "content": "AI Innovation Award",
+                              "fontFamily": "Inter",
+                              "fontSize": 22,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "rduRQ",
+                              "name": "Company",
+                              "fill": "#94a3b8",
+                              "content": "Tech Sponsor",
+                              "fontFamily": "Inter",
+                              "fontSize": 14,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "ARThu",
+                      "name": "Description",
+                      "fill": "#e5e5e5",
+                      "content": "Build the most innovative use of AI or ML in your project. Creativity and impact will be rewarded.",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "7qUJU",
+                      "name": "Criteria",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Pxy7I",
+                          "name": "Criteria Label",
+                          "fill": "#94a3b8",
+                          "content": "Criteria",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ZCwDn",
+                          "name": "Criteria body",
+                          "fill": "#e5e5e5",
+                          "content": "Impact, creativity, technical merit (markdown)…",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "NTIft",
+                      "name": "Prize",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "p5o7Y",
+                          "name": "Prize Label",
+                          "fill": "#94a3b8",
+                          "content": "Prize",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "jxp0u",
+                          "name": "Prize Value",
+                          "fill": "#facc15",
+                          "content": "€1,000",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "JhktG",
+                          "name": "Prize URL",
+                          "fill": "#818cf8",
+                          "content": "Details",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "DeuxW",
+      "x": 6580,
+      "y": 0,
+      "name": "Challenges Page - Mobile",
+      "context": "Challenges mobile. Same: description and criteria are markdown; prize_url link.",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": {
+        "type": "image",
+        "opacity": 0.2,
+        "enabled": true,
+        "url": "./build/client/images/pattern.png",
+        "mode": "fill"
+      },
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "0ZrtO",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 52,
+          "padding": [
+            16,
+            20
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "lHiVe",
+              "name": "Logo",
+              "width": 140,
+              "height": 28,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./build/client/images/logo.png",
+                "mode": "fit"
+              }
+            },
+            {
+              "type": "text",
+              "id": "AomYJ",
+              "name": "Time",
+              "fill": "#94a3b8",
+              "content": "14:32",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Qhov9",
+          "name": "Main",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            20,
+            20,
+            24,
+            20
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "drrHr",
+              "name": "Title",
+              "fill": "#94a3b8",
+              "content": "Challenges and Prizes",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "qxsI5",
+              "name": "List",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "py2OU",
+                  "name": "Challenge Card",
+                  "width": "fill_container",
+                  "fill": "#1a1a1a",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#333333"
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ARyvb",
+                      "name": "Header",
+                      "gap": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "ihk92",
+                          "name": "Company Logo",
+                          "width": 56,
+                          "height": 56,
+                          "fill": "#262626",
+                          "cornerRadius": 8
+                        },
+                        {
+                          "type": "frame",
+                          "id": "rIOmS",
+                          "name": "Titles",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 2,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "kXKCl",
+                              "name": "Challenge Title",
+                              "fill": "#f1f5f9",
+                              "content": "Best Use of Directus",
+                              "fontFamily": "Inter",
+                              "fontSize": 18,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "wHeZf",
+                              "name": "Company",
+                              "fill": "#94a3b8",
+                              "content": "Directus",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "szL0l",
+                      "name": "Description",
+                      "fill": "#e5e5e5",
+                      "content": "Build something amazing using Directus. Show us your best integration or creative use.",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Tc3lk",
+                      "name": "Criteria",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "hnv6S",
+                          "name": "Criteria Label",
+                          "fill": "#94a3b8",
+                          "content": "Criteria",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Vb6sh",
+                          "name": "Criteria body",
+                          "fill": "#e5e5e5",
+                          "content": "Judging criteria (markdown)…",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "M6qtI",
+                      "name": "Prize",
+                      "gap": 6,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "32p1Q",
+                          "name": "Prize Label",
+                          "fill": "#94a3b8",
+                          "content": "Prize",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "VBqdT",
+                          "name": "Prize Value",
+                          "fill": "#facc15",
+                          "content": "€500 + Swag",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "KRUvT",
+                          "name": "Prize URL",
+                          "fill": "#818cf8",
+                          "content": "Details",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "bfjTl",
+                  "name": "Challenge Card 2",
+                  "width": "fill_container",
+                  "fill": "#1a1a1a",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#333333"
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "BKRYB",
+                      "name": "Header",
+                      "gap": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "waxfY",
+                          "name": "Company Logo",
+                          "width": 56,
+                          "height": 56,
+                          "fill": "#262626",
+                          "cornerRadius": 8
+                        },
+                        {
+                          "type": "frame",
+                          "id": "qDF6Q",
+                          "name": "Titles",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 2,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "wXrv9",
+                              "name": "Challenge Title",
+                              "fill": "#f1f5f9",
+                              "content": "AI Innovation Award",
+                              "fontFamily": "Inter",
+                              "fontSize": 18,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "ao2Re",
+                              "name": "Company",
+                              "fill": "#94a3b8",
+                              "content": "Tech Sponsor",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "VC7AZ",
+                      "name": "Description",
+                      "fill": "#e5e5e5",
+                      "content": "Most innovative use of AI or ML. Creativity and impact rewarded.",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "riedD",
+                      "name": "Criteria",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "jXttC",
+                          "name": "Criteria Label",
+                          "fill": "#94a3b8",
+                          "content": "Criteria",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "i1zaH",
+                          "name": "Criteria body",
+                          "fill": "#e5e5e5",
+                          "content": "Impact and creativity (markdown)…",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "qH3Of",
+                      "name": "Prize",
+                      "gap": 6,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "LHVNo",
+                          "name": "Prize Label",
+                          "fill": "#94a3b8",
+                          "content": "Prize",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "cERlW",
+                          "name": "Prize Value",
+                          "fill": "#facc15",
+                          "content": "€1,000",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "xQaQp",
+                          "name": "Prize URL",
+                          "fill": "#818cf8",
+                          "content": "Details",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
                     }
                   ]
                 }
