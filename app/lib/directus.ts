@@ -46,10 +46,19 @@ interface Challenge {
   prize_url: string
 }
 
+export interface Mentor {
+  id: number
+  name: string
+  subtitle: string
+  discord?: string
+  description?: string
+}
+
 interface Schema {
   sponsors: Sponsor[]
   schedule: Schedule[]
   challenges: Challenge[]
+  mentors: Mentor[]
   wifi: Wifi
   hackingtime: Hackingtime
   announcement: Announcement
