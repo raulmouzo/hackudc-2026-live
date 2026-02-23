@@ -33,7 +33,7 @@ async function fetchIndexData(): Promise<IndexData> {
   }
 }
 
-const DISCORD_URL = 'https://discord.gg/catyMZrF'
+const DISCORD_URL = 'https://discord.gg/vXnJSRu6nK'
 const SOCIAL_MASTODON = 'https://mastodon.social/@gpul_'
 const SOCIAL_BSKY = 'https://bsky.app/profile/gpul.org'
 const SOCIAL_LINKEDIN = 'https://www.linkedin.com/company/gpul'
