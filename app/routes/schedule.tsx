@@ -1,7 +1,7 @@
 import { Link } from 'react-router'
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import ReactMarkdown from 'react-markdown'
-import { Clock, MapPin, Tag } from 'lucide-react'
+import { ChevronDown, Clock, Filter, MapPin, Tag } from 'lucide-react'
 import { readItems, readSingleton } from '@directus/sdk'
 import directus from '../lib/directus'
 import {
@@ -168,8 +168,49 @@ function ScheduleCard({ item, isActive, now }: { item: TimedScheduleItem; isActi
 export default function Schedule() {
   const [data, setData] = useState<ScheduleData>({ schedule: [], hacking: null })
   const [isLoading, setIsLoading] = useState(true)
+  const [selectedTag, setSelectedTag] = useState<string>('all')
+  const [isFilterOpen, setIsFilterOpen] = useState(false)
+  const filterRef = useRef<HTMLDivElement | null>(null)
   const now = useNow(1000)
   const timedSchedule = useMemo(() => buildTimedSchedule(data.schedule, now), [data.schedule, now])
+  const availableTags = useMemo(() => {
+    const tagMap = new Map<string, string>()
+    for (const item of data.schedule) {
+      for (const rawTag of item.tags ?? []) {
+        const label = rawTag.trim()
+        if (!label) continue
+        const key = label.toLowerCase()
+        if (!tagMap.has(key)) tagMap.set(key, label)
+      }
+    }
+    return Array.from(tagMap.entries())
+      .map(([key, label]) => ({ key, label }))
+      .sort((a, b) => a.label.localeCompare(b.label))
+  }, [data.schedule])
+
+  const filteredSchedule = useMemo(() => {
+    if (selectedTag === 'all') return timedSchedule
+    return timedSchedule.filter((item) => item.tags?.some((tag) => tag.trim().toLowerCase() === selectedTag))
+  }, [selectedTag, timedSchedule])
+
+  useEffect(() => {
+    if (selectedTag === 'all') return
+    const exists = availableTags.some((tag) => tag.key === selectedTag)
+    if (!exists) setSelectedTag('all')
+  }, [availableTags, selectedTag])
+
+  useEffect(() => {
+    if (!isFilterOpen) return
+    const handlePointerDown = (event: MouseEvent) => {
+      if (!filterRef.current) return
+      if (event.target instanceof Node && !filterRef.current.contains(event.target)) {
+        setIsFilterOpen(false)
+      }
+    }
+
+    window.addEventListener('mousedown', handlePointerDown)
+    return () => window.removeEventListener('mousedown', handlePointerDown)
+  }, [isFilterOpen])
 
   useEffect(() => {
     let cancelled = false
@@ -197,14 +238,64 @@ export default function Schedule() {
     <div className="min-h-screen text-slate-50 font-sans flex flex-col">
       <Header now={now} />
       <main className="flex-1 px-4 md:px-12 py-6 md:py-8 max-w-5xl mx-auto w-full">
-        <h2 className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500 mb-4">Schedule</h2>
+        <div className="mb-4 flex items-center justify-between gap-3">
+          <h2 className="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">Schedule</h2>
+          {availableTags.length > 0 ? (
+            <div ref={filterRef} className="relative">
+              <button
+                type="button"
+                onClick={() => setIsFilterOpen((value) => !value)}
+                className="inline-flex items-center gap-2 rounded-md border border-neutral-700 bg-neutral-900 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-slate-300 hover:border-neutral-600"
+                aria-expanded={isFilterOpen}
+                aria-haspopup="menu"
+              >
+                <Filter className="h-3.5 w-3.5" />
+                <span>
+                  {selectedTag === 'all'
+                    ? 'All tags'
+                    : (availableTags.find((tag) => tag.key === selectedTag)?.label ?? 'All tags')}
+                </span>
+                <ChevronDown className={`h-3.5 w-3.5 transition-transform ${isFilterOpen ? 'rotate-180' : ''}`} />
+              </button>
+              {isFilterOpen ? (
+                <div className="absolute right-0 z-20 mt-2 min-w-44 overflow-hidden rounded-lg border border-neutral-700 bg-neutral-900 shadow-lg">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setSelectedTag('all')
+                      setIsFilterOpen(false)
+                    }}
+                    className={`block w-full px-3 py-2 text-left text-xs font-medium uppercase tracking-[0.12em] ${selectedTag === 'all' ? 'bg-slate-800 text-slate-100' : 'text-slate-300 hover:bg-neutral-800'}`}
+                  >
+                    All tags
+                  </button>
+                  {availableTags.map((tag) => (
+                    <button
+                      key={tag.key}
+                      type="button"
+                      onClick={() => {
+                        setSelectedTag(tag.key)
+                        setIsFilterOpen(false)
+                      }}
+                      className={`block w-full px-3 py-2 text-left text-xs font-medium uppercase tracking-[0.12em] ${selectedTag === tag.key ? 'bg-indigo-500/20 text-indigo-100' : 'text-slate-300 hover:bg-neutral-800'}`}
+                    >
+                      {tag.label}
+                    </button>
+                  ))}
+                </div>
+              ) : null}
+            </div>
+          ) : null}
+        </div>
         <div className="space-y-3">
-          {timedSchedule.map((item) => (
+          {filteredSchedule.map((item) => (
             <ScheduleCard key={item.id} item={item} isActive={item.status === 'live'} now={now} />
           ))}
         </div>
-        {timedSchedule.length === 0 && !isLoading ? (
-          <p className="text-slate-500 py-8">No schedule items yet.</p>
+        {filteredSchedule.length === 0 && !isLoading ? (
+          <p className="text-slate-500 py-8">
+            {selectedTag === 'all' ? 'No schedule items yet.' : 'No schedule items for this tag.'}
+          </p>
         ) : null}
       </main>
       {isLoading ? (
