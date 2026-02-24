@@ -38,6 +38,7 @@ const SOCIAL_MASTODON = 'https://mastodon.social/@gpul_'
 const SOCIAL_BSKY = 'https://bsky.app/profile/gpul.org'
 const SOCIAL_LINKEDIN = 'https://www.linkedin.com/company/gpul'
 const SOCIAL_X = 'https://x.com/gpul_'
+const SOCIAL_INSTAGRAM = 'https://www.instagram.com/gpul_/'
 
 function Header({ now }: { now: Date | null }) {
   return (
@@ -144,6 +145,17 @@ function StayConnected({ wifi }: { wifi: WifiInfo | null }) {
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden>
                 <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
+            <a
+              href={SOCIAL_INSTAGRAM}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-400 hover:text-slate-300 transition-colors"
+              aria-label="Instagram"
+            >
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden>
+                <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.75A4 4 0 0 0 3.75 7.75v8.5a4 4 0 0 0 4 4h8.5a4 4 0 0 0 4-4v-8.5a4 4 0 0 0-4-4h-8.5zm8.9 1.35a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.75a3.25 3.25 0 1 0 0 6.5 3.25 3.25 0 0 0 0-6.5z" />
               </svg>
             </a>
           </div>
