@@ -83,7 +83,7 @@ function StayConnected({ wifi }: { wifi: WifiInfo | null }) {
             rel="noreferrer"
             className="text-base md:text-lg font-semibold text-indigo-400 hover:text-indigo-300"
           >
-            discord.gg/catyMZrF
+            {DISCORD_URL.replace(/^https?:\/\//, '')}
           </a>
         </div>
         <div className="flex flex-col gap-1.5">
