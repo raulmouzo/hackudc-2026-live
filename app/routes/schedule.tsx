@@ -202,15 +202,18 @@ export default function Schedule() {
 
     const groups: Array<{ key: string; label: string; items: TimedScheduleItem[] }> = []
     for (const item of filteredSchedule) {
-      const key = item.startDate.toISOString().slice(0, 10)
-      const existing = groups.at(-1)
+      const timestamp = item.startDate.getTime()
+      const isValidDate = Number.isFinite(timestamp)
+      const key = isValidDate
+        ? `${item.startDate.getFullYear()}-${String(item.startDate.getMonth() + 1).padStart(2, '0')}-${String(item.startDate.getDate()).padStart(2, '0')}`
+        : `unknown-${item.id}`
+      const existing = groups.length > 0 ? groups[groups.length - 1] : null
       if (existing && existing.key === key) {
         existing.items.push(item)
         continue
       }
 
-      const rawLabel = formatter.format(item.startDate)
-      const label = rawLabel.charAt(0).toUpperCase() + rawLabel.slice(1)
+      const label = isValidDate ? formatter.format(item.startDate) : 'Unscheduled'
       groups.push({ key, label, items: [item] })
     }
 
