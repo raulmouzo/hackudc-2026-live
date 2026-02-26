@@ -66,7 +66,7 @@ function StayConnected({ wifi }: { wifi: WifiInfo | null }) {
   return (
     <section className="rounded-xl border border-neutral-800 bg-neutral-900/80 p-6 md:p-8">
       <h2 className="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-6">Stay connected</h2>
-      <div className="flex flex-col md:flex-row md:items-start gap-8 md:gap-10">
+      <div className="flex flex-col md:flex-row md:items-start gap-8 md:gap-10 md:w-fit md:m-auto">
         <div className="flex flex-col items-center gap-5 self-center md:self-auto md:flex-row md:items-center md:gap-10 md:shrink-0">
           {qrValue ? (
             <>
